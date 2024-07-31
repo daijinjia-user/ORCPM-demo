@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "server",
+      "type": "java.lang.String",
+      "description": "Description for server."
+    },
+    {
+      "name": "spring.application.thymeleaf.cache",
+      "type": "java.lang.String",
+      "description": "Description for spring.application.thymeleaf.cache."
+    }
+  ] }
