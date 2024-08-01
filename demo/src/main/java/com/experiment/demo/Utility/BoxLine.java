@@ -27,6 +27,7 @@ public class BoxLine {
         Set<String> recomnt = new HashSet<>();
         recomnt.add(x_box);
         recomnt.add(y_box);
+        System.out.println(recomnt);
         return recomnt;
     }
 
