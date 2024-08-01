@@ -48,11 +48,11 @@ Regional  core pattern mining (RCPM) is designed to discover those core  pattern
     mvn spring-boot:run
     ```
 
-or，You can package the entire project as a jar package and then execute 
-
-```bash
-jave ORCPM-demo.jar
-```
+  or，You can package the entire project as a jar package and then execute 
+ 
+   ```bash
+   jave ORCPM-demo.jar
+   ```
 
 
 
@@ -96,16 +96,18 @@ jave ORCPM-demo.jar
     ![3.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/3.png?raw=true)
 
 4. Submit prevalence threshold mining for Regional Core Pattern:
-
     ```
-    Input the prevalence threshold (usually between 0 and 1), and after submission, mine the Regional Core Pattern. Display all patterns in a list.
+    Input the prevalence threshold (usually between 0 and 1), and after submission, mine the Regional Core Pattern. 
+    Display all patterns in a list.
     ```
-    ![4.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/4.png?raw=true)
-
+    <p align="center">
+      <img src="https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/4.png?raw=true" alt="4.png">
+    </p>
 5. Display the prevalence regions of the Regional Core Patterns:
 
     ```
-    First, select the desired pattern from the dropdown menu. Then, you can choose specific regions to display a more detailed view of each area within that pattern.
+    First, select the desired pattern from the dropdown menu. Then, you can choose specific regions to display a more 
+    detailed view of each area within that pattern.
     ```
 * Select pattern
    
