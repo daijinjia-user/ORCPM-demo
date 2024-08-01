@@ -77,28 +77,37 @@ Regional  core pattern mining (RCPM) is designed to discover those core  pattern
     | A, 4996.02, 2665.38	(example)	  |
     +-------------------------------------+
     ```
-
-    ![1.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/1.png?raw=true)
+   
+    <p align="center">
+      <img src="https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/1.png?raw=true" alt="1.png">
+    </p>
 
 2. View the visualizations and recommendations:
 
     ```
-    Based on box plot the recommended core features have [Recommended Features], Please choose your input
+    Based on box plot the recommended core features have [Recommended Features], Please choose your
+    input
     ```
 
-    ![2.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/2.png?raw=true)
+    <p align="center">
+      <img src="https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/2.png?raw=true" alt="2.png">
+    </p>
 
 3. Configure parameters and visual fine-tuning:
 
     ```
-    You can adjust the region partitioning by changing the core feature, pd, and core nearest affiliation num.
+    You can adjust the region partitioning by changing the core feature, pd, and core nearest
+    affiliation num.
     ```
-    ![3.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/3.png?raw=true)
+   
+    <p align="center">
+      <img src="https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/3.png?raw=true" alt="3.png">
+    </p>
 
 4. Submit prevalence threshold mining for Regional Core Pattern:
     ```
-    Input the prevalence threshold (usually between 0 and 1), and after submission, mine the Regional Core Pattern. 
-    Display all patterns in a list.
+    Input the prevalence threshold (usually between 0 and 1), and after submission, mine the
+    Regional Core Pattern. Display all patterns in a list.
     ```
     <p align="center">
       <img src="https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/4.png?raw=true" alt="4.png">
@@ -106,14 +115,18 @@ Regional  core pattern mining (RCPM) is designed to discover those core  pattern
 5. Display the prevalence regions of the Regional Core Patterns:
 
     ```
-    First, select the desired pattern from the dropdown menu. Then, you can choose specific regions to display a more 
-    detailed view of each area within that pattern.
+    First, select the desired pattern from the dropdown menu. Then, you can choose specific regions
+    to display a more detailed view of each area within that pattern.
     ```
-* Select pattern
+* Select pattern:
    
-  ![5.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/5.png?raw=true)
+  <p align="center">
+      <img src="https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/5.png?raw=true" alt="5.png">
+    </p>
 
-* Select region
+* Select region:
 
-  ![6.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/6.png?raw=true)
+  <p align="center">
+      <img src="https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/6.png?raw=true" alt="6.png">
+    </p>
 
