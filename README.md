@@ -1,12 +1,17 @@
 # ORCPM-demo
 
-ORCPM-demo is a web application for visualizing and analyzing datasets. It allows users to upload files, process data, and visualize results using various plots.
+Regional  core pattern mining (RCPM) is designed to discover those core  patterns that may occur frequently only in a sub-region and to  reveal the dependency relationship between core and non-core  features by analysing the core pattern's prevalent sub-regions.  RCPM-demo  is a web application for visualizing and analysing datasets, which can be widely used in tasks such as rare resource  conservation, commercial site selection, and others that the core  feature needs to be specified.  It allows users to upload files, process data, and visualize results using various plots.
+
+
 
 ## Features
 
-- Upload CSV files for data processing
-- Visualize data using scatter plots
-- Generate box plots for feature recommendation
+- Upload CSV files for data visualize 
+- Analyse data distribution and recommend parameters
+- Configure parameters and pattern mining
+- Visualization result display and analysis
+
+
 
 ## Installation
 
@@ -16,6 +21,8 @@ ORCPM-demo is a web application for visualizing and analyzing datasets. It allow
 - Apache Maven
 - Python 3.6 or later
 - Required Python libraries: `matplotlib`, `numpy`
+
+
 
 ### Steps
 
@@ -36,9 +43,18 @@ ORCPM-demo is a web application for visualizing and analyzing datasets. It allow
     ```
 
 4. Run the application:
+
     ```bash
     mvn spring-boot:run
     ```
+
+or，You can package the entire project as a jar package and then execute 
+
+```bash
+jave ORCPM-demo.jar
+```
+
+
 
 ## Usage
 
@@ -47,35 +63,55 @@ ORCPM-demo is a web application for visualizing and analyzing datasets. It allow
 3. The application will process the file and display visualizations based on the data.
 4. Based on box plot analysis, recommended core features will be displayed. You can choose your input accordingly.
 
+
+
 ## Example
 
 1. Upload a CSV file:
     ```
-    +----------------------------+
-    | Choose File                |
-    +----------------------------+
-    | [Upload]                   |
-    +----------------------------+
+    +-------------------------------------+
+    | Choose File                         |
+    +-------------------------------------+
+    | feature, X-coordinate, Y-coordinate |
+    +-------------------------------------+
+    | A, 4996.02, 2665.38	(example)	  |
+    +-------------------------------------+
     ```
 
+    ![1.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/1.png?raw=true)
+
 2. View the visualizations and recommendations:
+
     ```
     Based on box plot the recommended core features have [Recommended Features], Please choose your input
     ```
 
-## Contributing
+    ![2.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/2.png?raw=true)
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a pull request
+3. Configure parameters and visual fine-tuning:
 
-## License
+    ```
+    You can adjust the region partitioning by changing the core feature, pd, and core nearest affiliation num.
+    ```
+    ![3.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/3.png?raw=true)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+4. Submit prevalence threshold mining for Regional Core Pattern:
 
-## Contact
+    ```
+    Input the prevalence threshold (usually between 0 and 1), and after submission, mine the Regional Core Pattern. Display all patterns in a list.
+    ```
+    ![4.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/4.png?raw=true)
 
-If you have any questions or suggestions, please feel free to contact us at `example@example.com`.
+5. Display the prevalence regions of the Regional Core Patterns:
+
+    ```
+    First, select the desired pattern from the dropdown menu. Then, you can choose specific regions to display a more detailed view of each area within that pattern.
+    ```
+* Select pattern
+   
+  ![5.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/5.png?raw=true)
+
+* Select region
+
+  ![6.png](https://github.com/daijinjia-user/ORCPM-demo/blob/main/picture/6.png?raw=true)
 
