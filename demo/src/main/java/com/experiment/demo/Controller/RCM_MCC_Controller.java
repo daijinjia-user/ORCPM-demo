@@ -90,7 +90,6 @@ public class RCM_MCC_Controller {
             System.out.println("上传失败！");
             return "mining1";
         }
-        System.out.println("到这里了！");
         return "mining";
     }
 
@@ -202,22 +201,13 @@ public class RCM_MCC_Controller {
             }
             RCP_frequentArea.put(rcp,region_list);
         }
-        String folderPath = "src/main/resources/out/";
-        File folder = new File(folderPath);
-        Util2.clearFolder(folder);
-        for (String key:RCP_frequentArea.keySet()) {
-//            System.out.println(key +"有"+ RCP_frequentArea.get(key).size() +"个频繁区域");
-            Util2.CsvWriter(key,RCP_frequentArea.get(key), allInstances,folderPath);
-        }
-//        System.out.println(RCP_frequentArea);
-//        int all = 0;
+//        String folderPath = "src/main/resources/out/";
+//        File folder = new File(folderPath);
+//        Util2.clearFolder(folder);
 //        for (String key:RCP_frequentArea.keySet()) {
-//            for (ArrayList<String> key2:RCP_frequentArea.get(key)) {
-//                all += key2.size();
-//            }
-//
+////            System.out.println(key +"有"+ RCP_frequentArea.get(key).size() +"个频繁区域");
+//            Util2.CsvWriter(key,RCP_frequentArea.get(key), allInstances,folderPath);
 //        }
-//        System.out.println(all);
         model.addAttribute("coreFeature_j",CoreFeature);
         model.addAttribute("coreNum_j",gcoreNum);
         model.addAttribute("pd_j",gpd);

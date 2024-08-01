@@ -16,7 +16,7 @@ def clear_folder(folder_path):
 # 示例用法
 folder_path = 'E:/program/JS/demo/src/main/resources/static/picture/region'
 clear_folder(folder_path)
-colors = ['red', 'chocolate', 'orange', 'gold', 'yellow', 'palegreen','green', 'lime', 'aquamarine','cyan','deepskyblue','blue','pink','fuchsia','black', 'gray', 'lightcoral']
+colors = ['red', 'green', 'orange', 'gold', 'yellow', 'palegreen', 'lime', 'aquamarine','cyan','deepskyblue','blue','pink','fuchsia','black', 'gray', 'chocolate', 'lightcoral']
 #划区域
 featureList = []
 with open('E:/program/JS/demo/src/main/resources/static/dataset/dataset.csv', 'r') as f:
