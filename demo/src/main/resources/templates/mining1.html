@@ -162,7 +162,14 @@ footer {
                 <span style="margin-bottom: 30px;color: #1E88C7;font-size: 20px;font-weight: 600;">
                 Please upload dataset:
             </span>
-                <input type="file" name="file" id="uploadbtn" style="border: none;font-size: 20px;">
+                <!-- 隐藏默认文件上传按钮 -->
+                <input type="file" name="file" id="uploadbtn" style="display: none;">
+                <!-- 自定义文件上传按钮 -->
+                <br>
+                <label for="uploadbtn" style="border-radius: 5px;background-color: white;font-size: 20px;padding: 10px 20px;cursor: pointer;border: 2px solid;">
+                    Select File
+                </label>
+                <span id="file-name" style="margin-left: 10px;font-size: 20px;">No file</span>
                 <br>
                 <input id="submitbtn" type="submit" value="Update" style="border-radius: 5px;background-color: #a8e4d7;font-size: 20px;"/>
             </form>
@@ -205,6 +212,10 @@ footer {
 </body>
 <!-- <footer style="margin-bottom: 0px;"></footer> -->
 <script type="text/javascript">
+document.getElementById('uploadbtn').addEventListener('change', function() {
+    var fileName = this.files[0].name;
+    document.getElementById('file-name').textContent = fileName;
+});
 $("#submitbtn").click(function() {
     // 显示加载框和覆盖层
     $("#loading").show();
