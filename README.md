@@ -74,7 +74,7 @@ Regional  core pattern mining (RCPM) is designed to discover those core  pattern
     +-------------------------------------+
     | feature, X-coordinate, Y-coordinate |
     +-------------------------------------+
-    | A, 4996.02, 2665.38	(example)	  |
+    | A, 4996.02, 2665.38	(example)     |
     +-------------------------------------+
     ```
    
